@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS LEsson</title>
+  </head>
+  <body>
+    <header>
+      <div class="titlediv">
+        <div class="titleimgdiv">
+          <img
+            class="titleimg"
+            src="../images/Tilak2.jpg"
+            alt="me"
+            width="50px"
+          />
+        </div>
+        <div class="titletextdiv">
+          <h3 id="pg1h31" class="headtext">Welcome Tilak World</h3>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+            <li><a href="./resume.html"> Resume </a></li>
+            <li><a href="./videoresume.html">Video Resume</a></li>
+            <li><a href="./contacts.html"> Contact Me </a></li>
+            <li><a href="#" class="currentmenu"> Game 1 </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form action="">
+        <div>
+          <div>
+            <button
+              type="button"
+              class="startgame"
+              id="resetbtn"
+              onclick="resetGame()"
+            >
+              Reset Game
+            </button>
+          </div>
+          <div class="game1">
+            <div class="mygame">
+              <label class="centertext"> Your Selection </label>
+              <div class="mygame1">
+                <label>
+                  <input
+                    type="radio"
+                    name="mygame"
+                    id="rock"
+                    value="R"
+                    onclick="getRadioValue('R')"
+                  />
+                  <img src="../images/rock.jpeg" height="50px" alt="" />
+                </label>
+                <br />
+                <label>
+                  <input
+                    type="radio"
+                    name="mygame"
+                    id="Scissors"
+                    value="S"
+                    onclick="getRadioValue('S')"
+                  />
+                  <img src="../images/scissors.jpeg" height="50px" alt="" />
+                </label>
+                <br />
+                <label>
+                  <input
+                    type="radio"
+                    name="mygame"
+                    id="papers"
+                    value="P"
+                    onclick="getRadioValue('P')"
+                  />
+                  <img src="../images/paper.jpeg" height="50px" alt="" />
+                </label>
+              </div>
+            </div>
+            <div class="mygame">
+              <label class="centertext"> Result </label>
+              <div class="mygame1" id="dspresult"></div>
+            </div>
+
+            <div class="mygame">
+              <label class="centertext"> Computer Selection </label>
+              <div class="mygame1" id="pcresult"></div>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="score">
+        <div class="score1">
+          <label for="winscore">
+            <img
+              src="../images/thumsup.png"
+              alt=""
+              height="50px"
+              style="vertical-align: middle"
+            />
+          </label>
+          <input type="text" name="" id="winscore" readonly value="0" />
+        </div>
+        <div class="score1">
+          <label for="drawcore"> Draw </label>
+          <input type="text" name="" id="drawscore" readonly value="0" />
+        </div>
+        <div class="score1">
+          <label for="lostcore">
+            <img
+              src="../images/thumsdown.png"
+              alt=""
+              height="50px"
+              style="vertical-align: middle"
+            />
+          </label>
+          <input type="text" name="" id="lostscore" readonly value="0" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

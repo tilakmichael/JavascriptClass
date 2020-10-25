@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/game2.js"></script>
+    <link rel="stylesheet" href="../css/game2.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake & Ladder</title>
+  </head>
+  <body>
+    <head>
+      <div class="headDiv">
+        <div class="headDivCell">
+          <button id="restBtn" class="resetBtn bold" onclick=" resetGame()">
+            Reset
+          </button>
+        </div>
+        <div class="headDivCell">
+          <span> Player Name :</span>
+          <span id="playerName"> </span>
+        </div>
+      </div>
+    </head>
+    <!--  Game Body -->
+    <body>
+      <div class="gameBody">
+        <table class="gameTable" border="1" id="gameTable"></table>
+      </div>
+    </body>
+    <!-- Score -->
+    <footer>
+      <div class="footerDiv">
+        <div>
+          <button id="rollBtn" class="resetBtn bold" onclick="rollDice()">
+            Roll Dice
+          </button>
+        </div>
+        <div class="headDiv">
+          <!-- human player -->
+          <div class="headDivCell">
+            <div>
+              <label for="0Dice">Dice:</label>
+              <input type="number" name="" id="0Dice" />
+              <label for="0count">Count:</label>
+              <input type="number" name="" id="0Count" />
+            </div>
+            <div>
+              <label for="0PScore">Previous Score:</label>
+              <input type="number" name="" id="0PScore" />
+              <label for="pCScore">Current Score:</label>
+              <input type="number" name="" id="0CScore" />
+            </div>
+          </div>
+          <!-- Robo Player -->
+
+          <div class="headDivCell">
+            <div>
+              <label for="1Dice">Dice:</label>
+              <input type="number" name="" id="1Dice" />
+              <label for="1count">Count:</label>
+              <input type="number" name="" id="1Count" />
+            </div>
+            <div>
+              <label for="1PScore">Previous Score:</label>
+              <input type="number" name="" id="1PScore" />
+              <label for="rCScore">Current Score:</label>
+              <input type="number" name="" id="1CScore" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

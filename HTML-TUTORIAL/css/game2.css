@@ -1,0 +1,51 @@
+.headDiv {
+  height: 5%;
+  width: 100%;
+  background-color: aqua;
+  display: table;
+  table-layout: fixed;
+}
+.footerDiv {
+  height: 10%;
+  width: 100%;
+  background-color: aqua;
+}
+.headDivCell {
+  width: 50%;
+  display: table-cell;
+}
+.headDivCell span {
+  margin-left: 10px;
+}
+.resetBtn {
+  width: 100%;
+  background-color: lightgray;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.gameBody {
+  height: 85%;
+  width: 100%;
+  background-color: lightblue;
+}
+.gameTable {
+  width: 100%;
+}
+.tableCol {
+  height: 70px;
+}
+
+.colColor {
+  background-color: beige;
+}
+
+.redBG {
+  background-color: red;
+}
+
+.greenBG {
+  background-color: green;
+}

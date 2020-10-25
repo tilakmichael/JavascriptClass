@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script>
+      function showMyvalue() {
+        var retval = true;
+        var age = document.getElementById("_pcName1").value;
+        alert(age);
+        /* if (+age > 50) {
+        alert("Your are old for this class!!!!!");
+        retval = false;
+      } */
+        return retval;
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conrcts</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="titlediv">
+        <div class="titleimgdiv">
+          <img
+            class="titleimg"
+            src="../images/Tilak2.jpg"
+            alt="me"
+            width="50px"
+          />
+        </div>
+        <div class="titletextdiv">
+          <h3 id="pg1h31" class="headtext">Welcome Tilak World</h3>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+            <li><a href="./resume.html"> Resume </a></li>
+            <li>
+              <a href="./videoresume.html">Video Resume</a>
+            </li>
+            <li>
+              <a href="#" class="currentmenu"> Contact Me </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form action="./result.html" onsubmit="return showMyvalue() ">
+        <div class="field">
+          <div class="labfiled">
+            <label for="_pcName1">Name</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="pcname"
+              id="_pcName1"
+              placeholder="Enter You name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <div>
+            <label for="_pcage" class="labfiled">Age</label>
+          </div>
+          <div>
+            <input type="number" name="pcage" id="_pcage" min="1" max="120" />
+          </div>
+        </div>
+        <div class="field">
+          <div>
+            <label for="_pcpas" class="labfiled">Password</label>
+          </div>
+          <div>
+            <input type="password" name="pcpass" id="_pcpas" />
+          </div>
+        </div>
+        <div class="field">
+          <div>
+            <label for="_pcradioM">Male</label>
+          </div>
+          <div>
+            <input type="radio" name="pcRadio" id="_pcradioM" value="M" />
+          </div>
+          <div>
+            <label for="_pcradioF">Female</label>
+          </div>
+          <div>
+            <input type="radio" name="pcRadio" id="_pcradioF" value="F" />
+          </div>
+          <div>
+            <label for="_pcradioU">Unknown</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="pcRadio"
+              id="_pcradioU"
+              value="U"
+              checked
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <div>
+            <label class="labfiled">Known Language </label>
+          </div>
+          <div>
+            <label for="_chk1">Tamil</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="pccheck"
+              id="_chk1"
+              value="T"
+              checked
+            />
+          </div>
+          <div>
+            <label for="_chk2">English</label>
+          </div>
+          <div>
+            <input type="checkbox" name="pccheck" id="_chk2" value="E" />
+          </div>
+          <div>
+            <label for="_chk3">French</label>
+          </div>
+          <div>
+            <input type="checkbox" name="pccheck" id="_chk3" value="F" />
+          </div>
+        </div>
+        <div class="field">
+          <div>
+            <label for="pcsel" class="labfiled">State</label>
+          </div>
+          <div>
+            <select name="pcsel" id="pcsel">
+              <option value="TN">Tamil Nadu</option>
+              <option value="KL">Kerala</option>
+              <option value="MH">Maharastra</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="myfoter">
+        <a href="http://whatsup.com" target="_blank">
+          <img src="../images/whatsapp.png" alt="Whatsup" height="50px" />
+        </a>
+        <a href="https://www.facebook.com/tilak.michael" target="_blank">
+          <img src="../images/facebook.png" alt="FaceBook" height="50px" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/tilakmichael/" target="_blank">
+          <img src="../images/linkdin.png" alt="FaceBook" height="50px" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
